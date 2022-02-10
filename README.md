@@ -17,16 +17,16 @@ No aprendizado supervisionado, usamos dados conhecidos ou rotulados para os dado
 
 Aqui está a lista dos principais algoritmos atualmente sendo usados para aprendizado supervisionado:
 
-[Regressão polinomial]
+-[Regressão polinomial]
 
-[Floresta aleatória]
+-[Floresta aleatória]
 
-[Regressão linear]
+-[Regressão linear]
 
-[Regressão logística]
+-[Regressão logística]
 
-[Árvores de decisão]
+-[Árvores de decisão]
 
-[K-vizinhos mais próximos]
+-[K-vizinhos mais próximos]
 
-[Naive Bayes]
+-[Naive Bayes]
