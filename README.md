@@ -33,3 +33,47 @@ Aqui está a lista dos principais algoritmos atualmente sendo usados para aprend
 -[K-vizinhos mais próximos](K-vizinhos-mais-proximos)
 
 -[Naive Bayes](Naive-Bayes)
+
+
+No aprendizado não supervisionado, os dados de treinamento são desconhecidos e não rotulados - o que significa que ninguém olhou para os dados antes. Sem o aspecto de dados conhecidos, a entrada não pode ser guiada para o algoritmo, que é de onde o termo não supervisionado se origina. 
+
+Esses dados são alimentados ao algoritmo de Machine Learning e são usados para treinar o modelo. O modelo treinado tenta procurar um padrão e dar a resposta desejada. Nesse caso, muitas vezes é como se o algoritmo estivesse tentando quebrar o código como a máquina Enigma, mas sem a mente humana diretamente envolvida, mas sim uma máquina.
+
+Os 7 principais algoritmos atualmente usados para aprendizado não supervisionado são:
+
+-[Mínimos quadrados parciais]()
+
+-[Meios difusos]()
+
+-[Decomposição de valor singular]()
+
+-[Agrupamento K-means]()
+
+-[A priori]()
+
+-[Agrupamento hierárquico]()
+
+-[Análise do componente principal]()
+
+
+Redes neurais
+
+As redes neurais são uma classe específica e comumente usada de algoritmos de Machine Learning. As redes neurais artificiais são modeladas baseadas no cérebro humano, no qual milhares ou milhões de nós de processamento são interconectados e organizados em camadas.
+
+Em uma rede neural artificial, células ou nós são conectados, com cada célula processando entradas e produzindo uma saída que é enviada a outros neurônios. Os dados rotulados se movem pelos nós, ou células, com cada célula desempenhando uma função diferente. Em uma rede neural treinada para identificar se uma imagem contém um gato ou não, os diferentes nós avaliariam as informações e chegariam a uma saída que indica se uma imagem apresenta um gato.
+
+[Deep Learning](https://algorithmia.com/blog/introduction-to-deep-learning)
+
+As redes de Deep Learning são redes neurais com muitas camadas. A rede em camadas pode processar grandes quantidades de dados e determinar o “peso” de cada link na rede – por exemplo, em um sistema de reconhecimento de imagem, algumas camadas da rede neural podem detectar características individuais de um rosto, como olhos, nariz, ou boca, enquanto outra camada seria capaz de dizer se esses recursos aparecem de uma forma que indica um rosto.
+
+Assim como as redes neurais, o Deep Learning é modelado na maneira como o cérebro humano funciona e potencializa muitos usos do Machine Learning, como veículos autônomos, chatbots e diagnósticos médicos.
+
+
+### **Referências**
+
+https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-machine-learning
+https://www.britannica.com/technology/machine-learning
+https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial#Vis%C3%A3o_geral
+https://tecnoblog.net/responde/machine-learning-ia-o-que-e/
+https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained
+https://algorithmia.com/blog/introduction-to-deep-learning
