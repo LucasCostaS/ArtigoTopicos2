@@ -22,9 +22,9 @@ Aqui está a lista dos principais algoritmos atualmente sendo usados para aprend
 
 -[Floresta aleatória](Floresta-Aleatoria)
 
--[Regressão logística](Regressão-Logistica)
-
 -[Regressão linear](Regressão-Linear)
+
+-[Regressão logística](Regressão-Logistica)
 
 -[Regressão polinomial](Regressão-Polinomial)
 
