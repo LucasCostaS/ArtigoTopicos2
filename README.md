@@ -72,8 +72,13 @@ Assim como as redes neurais, o Deep Learning é modelado na maneira como o cére
 ### **Referências**
 
 https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-machine-learning
+
 https://www.britannica.com/technology/machine-learning
+
 https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial#Vis%C3%A3o_geral
+
 https://tecnoblog.net/responde/machine-learning-ia-o-que-e/
+
 https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained
+
 https://algorithmia.com/blog/introduction-to-deep-learning
