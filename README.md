@@ -19,14 +19,14 @@ Aqui está a lista dos principais algoritmos atualmente sendo usados para aprend
 
 -[Regressão polinomial](RegressãoPolinomial)
 
--[Floresta aleatória]
+-[Floresta aleatória](Floresta-aleatória)
 
--[Regressão linear]
+-[Regressão linear](Regressão-linear)
 
--[Regressão logística]
+-[Regressão logística](Regressão-logística)
 
--[Árvores de decisão]
+-[Árvores de decisão](Árvores-de-decisão)
 
--[K-vizinhos mais próximos]
+-[K-vizinhos mais próximos](K-vizinhos-mais-próximos)
 
--[Naive Bayes]
+-[Naive Bayes](Naive-Bayes)
