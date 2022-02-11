@@ -124,7 +124,7 @@ Por estarmos elevando o resíduo ao quadrado, não podemos comparar ele com o va
 
 ## Vantagens e Desvantagens
 
-#Vantagens
+### Vantagens
 
 A análise de regressão ajuda gerentes e donos de empresas a prever condições futuras, dar suporte quantitativo ao julgamento dos gerentes, apontar falhas no pensamento gerencial e fornecer novos insights que podem ajudar os tomadores de decisão a mudar seus negócios para um futuro mais lucrativo.
 
@@ -150,7 +150,7 @@ Grandes conjuntos de dados têm o potencial de gerar novas informações valiosa
 
 Por exemplo, a análise de dados de vendas e compras pode revelar padrões de compra específicos em determinados dias da semana ou em determinadas épocas do ano. Esses insights podem sinalizar a necessidade de garantir que esses produtos estejam em oferta suficiente para esses períodos de alta demanda.
 
-# Desvantagens
+### Desvantagens
 
 **Regressão linear é limitada a relacionamentos lineares**
 
