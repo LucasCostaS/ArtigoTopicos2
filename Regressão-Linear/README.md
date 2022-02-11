@@ -83,26 +83,36 @@ O resíduo representa a quantidade da variabilidade que Y que o modelo ajustado 
 ***Métricas de validação***
 
 SQR (Soma dos Quadrados dos Resíduos)
+
 Soma dos quadrados dos resíduos, mostra a variação de Y que não é explicada pelo modelo elaborado. É a medida da variação que não pode ser explicada.
 
 <div>
 <img src="https://miro.medium.com/max/1400/1*YC_sAM5AZFmkNeol4BdynA.png" width="600">
 </div>
 
+
 R²
+
 O R² é uma medida estatística de quão próximos os dados estão da linha de regressão ajustada. Ele também é conhecido como o coeficiente de determinação ou o coeficiente de determinação múltipla para a regressão múltipla.
+
 O R² está sempre entre 0 e 1:
+
 0: indica que o modelo não explica nada da variabilidade dos dados de resposta ao redor de sua média.
+
 1: indica que o modelo explica toda a variabilidade dos dados de resposta ao redor de sua média.
 
+
 MAE (Erro Médio absoluto)
+
 O erro médio absoluto (MAE) é a métrica de erro de regressão mais simples de entender. Ele calcula o valor dos resíduos para cada um dos pontos e depois é tirado a média de todos esses resíduos.
 
 <div>
 <img src="https://miro.medium.com/max/1400/0*nruMtzDtZjauyUQ7.jpg" width="600">
 </div>
 
+
 MSE (Média dos erros ao quadrado)
+
 O MSE é apenas o cálculo do erro mas elevamos ao quadrado.
 
 <div>
