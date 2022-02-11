@@ -27,3 +27,22 @@ Regressão linear múltipla: refere-se a várias variáveis independentes ***x**
 <div>
 <img src="http://www.sakurai.dev.br/images/posts/2021-01-04-regressao-linear-multipla-04.png" width="600">
 </div>
+
+## Usos
+
+A análise de regressão pode ser utilizada para resolver os seguintes tipos de problemas:
+
+Determinar quais variáveis explanatórias estão relacionadas à variável dependente.
+
+Entender o relacionamento entre as variáveis dependentes e explanatórias.
+
+Prever valores desconhecidos da variável dependente.
+
+***Exemplos***
+
+Um analista de uma pequena cadeia de varejo está estudando o desempenho de diferentes lojas. O analista deseja saber o motivo de algumas lojas estarem tendo um volume de vendas inesperadamente baixo. O analista cria um modelo de regressão com variáveis explanatórias como idade mediana e renda na vizinhança, como também, a distância até centros de varejo e o transporte público, para determinar quais variáveis estão influenciando as vendas.
+
+Um analista de um departamento de educação está estudando os efeitos dos programas de café da manhã na escola. O analista cria um modelo de regressão dos resultados de escolaridade, como a taxa de graduação, utilizando variáveis explanatórias como tamanho da turma, renda familiar, orçamento escolar per capita e proporção de alunos tomando café da manhã diariamente. A equação do modelo pode ser utilizada para determinar o efeito relativo de cada variável nos resultados de escolaridade.
+
+O analista de uma organização não governamental está estudando as emissões globais de gases de efeito estufa. O analista cria um modelo de regressão para as emissões mais recentes para cada país utilizando variáveis explanatórias como produto interno bruto (PIB), população, produção de eletricidade utilizando combustíveis fósseis e uso de veículos. O modelo pode então ser utilizado para prever futuras emissões de gases de efeito estufa utilizando o PIB previsto e os valores da população.
+
