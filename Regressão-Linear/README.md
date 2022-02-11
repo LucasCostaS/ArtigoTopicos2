@@ -122,3 +122,53 @@ O MSE é apenas o cálculo do erro mas elevamos ao quadrado.
 
 Por estarmos elevando o resíduo ao quadrado, não podemos comparar ele com o valor de MAE, pois ele sempre será maior portanto faz mais sentido comparar o MSE com o valor do MSE de outro modelo.
 
+## Vantagens e Desvantagens
+
+#Vantagens
+
+A análise de regressão ajuda gerentes e donos de empresas a prever condições futuras, dar suporte quantitativo ao julgamento dos gerentes, apontar falhas no pensamento gerencial e fornecer novos insights que podem ajudar os tomadores de decisão a mudar seus negócios para um futuro mais lucrativo.
+
+**Prever o futuro**
+
+Uma das principais vantagens das técnicas de previsão baseadas em regressão é que elas usam pesquisa e análise para prever o que provavelmente acontecerá no próximo trimestre, ano ou até mais longe no futuro, de acordo com AH Studenmund, autor de “Using Econometrics”. Para os proprietários de pequenas empresas, a previsão baseada em regressão pode fornecer informações sobre como impostos mais altos, mudanças nos gastos do consumidor ou mudanças na economia local, por exemplo, afetarão suas empresas.
+
+**Decisões de apoio**
+
+As técnicas de regressão e previsão podem dar um ângulo científico ao gerenciamento de pequenas empresas, reduzindo grandes quantidades de dados brutos a informações acionáveis. Em alguns casos, a análise apoiará o sentimento do gerente.
+
+Por exemplo, um gerente que acredita na expansão para uma nova instalação aumentará o tráfego de clientes e as vendas poderão encontrar suporte em um modelo de regressão que encontre uma correlação entre o tamanho da instalação e as receitas da empresa.
+
+**Corrigindo erros**
+
+Embora a previsão e a regressão possam dar suporte empírico à intuição gerencial, essas técnicas também podem corrigir o pensamento gerencial quando as evidências indicam o contrário. Assim como a regressão pode fornecer suporte quantitativo para as decisões, ela também pode mostrar onde a intuição de uma pequena empresa está equivocada.
+
+Por exemplo, um gerente de loja de varejo pode acreditar que o aumento do número de horas de compras aumentará muito as vendas. Uma análise de regressão, no entanto, pode demonstrar que as horas mais longas não aumentam significativamente as vendas o suficiente para justificar o aumento dos custos operacionais, como o trabalho adicional dos funcionários.
+
+**Novas ideias**
+
+Grandes conjuntos de dados têm o potencial de gerar novas informações valiosas sobre empresas e suas operações. No entanto, os dados não falam por si, tornando a análise necessária. As técnicas de regressão e previsão podem gerar novos insights para os gerentes, revelando padrões e relacionamentos que eles não haviam percebido ou considerado anteriormente.
+
+Por exemplo, a análise de dados de vendas e compras pode revelar padrões de compra específicos em determinados dias da semana ou em determinadas épocas do ano. Esses insights podem sinalizar a necessidade de garantir que esses produtos estejam em oferta suficiente para esses períodos de alta demanda.
+
+# Desvantagens
+
+**Regressão linear é limitada a relacionamentos lineares**
+
+Por sua natureza, a regressão linear analisa apenas relações lineares entre variáveis dependentes e independentes. Isto é, pressupõe que existe uma relação direta entre eles. Às vezes isso está incorreto. Por exemplo, a relação entre renda e idade é curva, ou seja, a renda tende a aumentar nas primeiras partes da vida adulta, se achatando na idade adulta e declinando depois que as pessoas se aposentam. Você pode dizer se isso é um problema, olhando representações gráficas dos relacionamentos.
+
+**Regressão Linear olha apenas para a média da variável dependente**
+
+A regressão linear analisa uma relação entre a média da variável dependente e as variáveis independentes. Por exemplo, se você observar a relação entre o peso ao nascer dos bebês e as características maternas, como a idade, a regressão linear examinará o peso médio dos bebês nascidos de mães de diferentes idades.
+
+No entanto, às vezes você precisa olhar para os extremos da variável dependente, por exemplo, bebês correm risco quando seus pesos estão baixos, então você gostaria de ver os extremos neste exemplo.
+
+Assim como a média não é uma descrição completa de uma única variável, a regressão linear não é uma descrição completa das relações entre as variáveis. Você pode lidar com esse problema usando a regressão quantílica.
+
+**Os dados devem ser independentes**
+
+A regressão linear assume que os dados são independentes. Isso significa que as pontuações de um sujeito (como uma pessoa) não têm nada a ver com as de outro. Isso é muitas vezes, mas nem sempre, sensato. Dois casos comuns em que não faz sentido são agrupados no espaço e no tempo.
+
+Um exemplo clássico de agrupamento no espaço são os resultados dos testes dos alunos, quando você tem alunos de várias classes, séries, escolas e distritos escolares. Alunos da mesma turma tendem a ser parecidos em muitos aspectos, ou seja, muitas vezes vêm dos mesmos bairros, possuem os mesmos professores, etc. Assim, não são independentes.
+
+Exemplos de clustering no tempo são quaisquer estudos em que você mede os mesmos assuntos várias vezes. Por exemplo, em um estudo de dieta e peso, você pode medir cada pessoa várias vezes. Esses dados não são independentes porque o que uma pessoa pesa em uma ocasião está relacionado ao que ela pesa em outras ocasiões. Uma maneira de lidar com isso é com modelos multiníveis.
+
