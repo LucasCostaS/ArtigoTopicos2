@@ -1,6 +1,6 @@
 # Regressão Linear
 
-##O que é regressão linear?
+## O que é regressão linear?
 
 Sua origem vem da correlação linear, que é a verificação da existência de um relacionamento entre duas variáveis. Ou seja, dado X e Y, quanto que X explica Y. Para isso, a regressão linear utiliza os pontos de dados para encontrar a melhor linha de ajuste para modelar essa relação.
 
