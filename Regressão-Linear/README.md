@@ -109,8 +109,7 @@ O erro médio absoluto (MAE) é a métrica de erro de regressão mais simples de
 <div>
 <img src="https://miro.medium.com/max/1400/0*nruMtzDtZjauyUQ7.jpg" width="600">
 </div>
-
-
+\n
 MSE (Média dos erros ao quadrado)
 
 O MSE é apenas o cálculo do erro mas elevamos ao quadrado.
