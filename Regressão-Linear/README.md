@@ -70,3 +70,43 @@ O objetivo da regressão linear é encontrar uma reta que consiga definir bem os
 </div>
 
 Onde ***w<sub>0</sub>*** (representa o ponto inicial da reta)e ***w<sub>1</sub>*** (representa a inclinação da reta, ou seja, o quanto que essa variável cresce conforme o tempo passa) são variáveis que o algoritmo calcula para poder definir a reta, e ***x<sub>1</sub>*** seria o atributo de entrada que foi dada ao modelo. E com esses valores ele consegue fazer as previsões.
+
+Por exemplo, vamos supor que o algoritmo calculou o valor de ***w<sub>0</sub>*** e ***w<sub>1</sub>*** e definiu que seria respectivamente 0 e 10. O valor de ***x<sub>1</sub>*** será 5.1, portanto o cálculo realizado será:
+Yˆ= f(x) = 0 + 10 * 5.1
+Yˆ= 51
+
+Se você fizer o valor real menos o valor previsto, poderá obter o erro/ resíduo. Portanto a equação ficaria:
+residuo = Y - Yˆ
+
+O resíduo representa a quantidade da variabilidade que Y que o modelo ajustado não consegue explicar. Os resíduos contém informação sobre o motivo do modelo não ter se ajustado bem aos dados.
+
+***Métricas de validação***
+
+SQR (Soma dos Quadrados dos Resíduos)
+Soma dos quadrados dos resíduos, mostra a variação de Y que não é explicada pelo modelo elaborado. É a medida da variação que não pode ser explicada.
+
+<div>
+<img src="https://miro.medium.com/max/1400/1*YC_sAM5AZFmkNeol4BdynA.png" width="600">
+</div>
+
+R²
+O R² é uma medida estatística de quão próximos os dados estão da linha de regressão ajustada. Ele também é conhecido como o coeficiente de determinação ou o coeficiente de determinação múltipla para a regressão múltipla.
+O R² está sempre entre 0 e 1:
+0: indica que o modelo não explica nada da variabilidade dos dados de resposta ao redor de sua média.
+1: indica que o modelo explica toda a variabilidade dos dados de resposta ao redor de sua média.
+
+MAE (Erro Médio absoluto)
+O erro médio absoluto (MAE) é a métrica de erro de regressão mais simples de entender. Ele calcula o valor dos resíduos para cada um dos pontos e depois é tirado a média de todos esses resíduos.
+
+<div>
+<img src="https://miro.medium.com/max/1400/0*nruMtzDtZjauyUQ7.jpg" width="600">
+</div>
+
+MSE (Média dos erros ao quadrado)
+O MSE é apenas o cálculo do erro mas elevamos ao quadrado.
+
+<div>
+<img src="https://miro.medium.com/max/1400/1*EI9mQhCNLrdgTXVAp-6tXg.png" width="600">
+</div>
+
+Por estarmos elevando o resíduo ao quadrado, não podemos comparar ele com o valor de MAE, pois ele sempre será maior portanto faz mais sentido comparar o MSE com o valor do MSE de outro modelo.
