@@ -46,3 +46,27 @@ Um analista de um departamento de educação está estudando os efeitos dos prog
 
 O analista de uma organização não governamental está estudando as emissões globais de gases de efeito estufa. O analista cria um modelo de regressão para as emissões mais recentes para cada país utilizando variáveis explanatórias como produto interno bruto (PIB), população, produção de eletricidade utilizando combustíveis fósseis e uso de veículos. O modelo pode então ser utilizado para prever futuras emissões de gases de efeito estufa utilizando o PIB previsto e os valores da população.
 
+## A matemática por trás
+
+Para ser aplicado é necessário que haja uma boa correlação linear (positiva ou negativa) entre os dados, ou seja, quando o relacionamento ou associação entre os dados pode ser definido com uma reta.
+
+Mas o que é correlação?
+
+Em probabilidade e estatística, correlação, dependência ou associação é qualquer relação estatística (causal ou não causal) entre duas variáveis e correlação é qualquer relação dentro de uma ampla classe de relações estatísticas que envolva dependência entre duas variáveis. Por exemplo, a correlação entre a estatura dos pais e a estatura dos pais e dos filhos. Na regressão Linear usamos a Correlação Linear de Pearson.
+
+Correlação Linear de Pearson: mede a correlação linear entre a nuvem de pontos. O resultado varia entre -1 e 1:
+-1: Correlação linear perfeita negativa
+1: Correlação linear perfeita positiva
+0: Não tem correlação linear
+
+<div>
+<img src="https://miro.medium.com/max/1400/1*7hpPonf1E0rUJ6xETLySKQ.png" width="600">
+</div>
+
+O objetivo da regressão linear é encontrar uma reta que consiga definir bem os dados e minimizar a diferença entre o valor real e a saída calculada pelo modelo. A função que representa bem a regressão linear é dado a seguir:
+
+<div>
+<img src="https://miro.medium.com/max/1400/0*E-6Yud1vgsM6pV6u" width="600">
+</div>
+
+Onde ***w<sub>0</sub>*** (representa o ponto inicial da reta)e ***w<sub>1</sub>*** (representa a inclinação da reta, ou seja, o quanto que essa variável cresce conforme o tempo passa) são variáveis que o algoritmo calcula para poder definir a reta, e ***x<sub>0</sub>*** seria o atributo de entrada que foi dada ao modelo. E com esses valores ele consegue fazer as previsões.
