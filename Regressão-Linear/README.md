@@ -15,3 +15,12 @@ Variável alvo ou dependente: é a variável que queremos prever. No exemplo aci
 <img src="https://images.squarespace-cdn.com/content/v1/5a2a067e8dd04151f6e8250d/1592816786422-TU0MNDRCXD7Y4JAT3LGP/regressao+linear2.jpg" width="500">
 </div>
 
+Existem 2 tipos de regressão linear: simples e a múltipla.
+
+Regressão linear simples : refere-se quando temos somente uma variável independente ***x*** para fazermos a predição.
+
+Regressão linear múltipla: refere-se a várias variáveis independentes ***x*** usadas para fazer a predição.
+
+<div>
+<img src="http://www.sakurai.dev.br/images/posts/2021-01-04-regressao-linear-multipla-04.png" width="500">
+</div>
