@@ -108,8 +108,6 @@ Repare que, ao contrário do Multinomial Naive Bayes, há uma penalidade no caso
 
 ### Desvantagens
 
--Naive Bayes assume que todos os preditores (ou recursos) são independentes, raramente acontecendo na vida real. Isso limita a aplicabilidade desse algoritmo em casos de uso do mundo real.
-
--Este algoritmo enfrenta o "problema de frequência zero", onde atribui probabilidade zero a uma variável categórica cuja categoria no conjunto de dados de teste não estava disponível no conjunto de dados de treinamento. Seria melhor se você usasse uma técnica de suavização para superar esse problema.
-
--Suas estimativas podem estar erradas em alguns casos, então você não deve levar suas saídas de probabilidade muito a sério.
+- Naive Bayes assume que todos os preditores (ou recursos) são independentes, raramente acontecendo na vida real. Isso limita a aplicabilidade desse algoritmo em casos de uso do mundo real.
+- Este algoritmo enfrenta o "problema de frequência zero", onde atribui probabilidade zero a uma variável categórica cuja categoria no conjunto de dados de teste não estava disponível no conjunto de dados de treinamento. Seria melhor se você usasse uma técnica de suavização para superar esse problema.
+- Suas estimativas podem estar erradas em alguns casos, então você não deve levar suas saídas de probabilidade muito a sério.
