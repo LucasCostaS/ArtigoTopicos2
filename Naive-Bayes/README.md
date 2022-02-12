@@ -101,13 +101,10 @@ Repare que, ao contrário do Multinomial Naive Bayes, há uma penalidade no caso
 
 ### Vantagens
 
--Esse algoritmo funciona rapidamente e pode economizar muito tempo.
-
--Naive Bayes é adequado para resolver problemas de previsão multiclasse.
-
--Se sua suposição de independência de recursos for verdadeira, ele pode ter um desempenho melhor do que outros modelos e requer muito menos dados de treinamento.
-
--Naive Bayes é mais adequado para variáveis de entrada categóricas do que para variáveis numéricas.
+- Esse algoritmo funciona rapidamente e pode economizar muito tempo.
+- Naive Bayes é adequado para resolver problemas de previsão multiclasse.
+- Se sua suposição de independência de recursos for verdadeira, ele pode ter um desempenho melhor do que outros modelos e requer muito menos dados de treinamento.
+- Naive Bayes é mais adequado para variáveis de entrada categóricas do que para variáveis numéricas.
 
 ### Desvantagens
 
