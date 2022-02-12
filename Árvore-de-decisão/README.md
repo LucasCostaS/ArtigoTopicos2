@@ -71,15 +71,15 @@ onde p(c|R) é a probabilidade de um ponto da região R pertencer a classe c. Es
 ### Vantagens
 
 - Interpretação
- - Percebe-se a razão da decisão
+  - Percebe-se a razão da decisão
 - Facilidade em lidar com diversos tipos de informação
- - Real, nominal, ordinal, etc
- - Não é necessário definir “importância relativa”
+  - Real, nominal, ordinal, etc
+  - Não é necessário definir “importância relativa”
 - Insensível a factores de escala
 - Escolha automática dos atributos mais relevantes em cada caso
- - Atributos mais relevantes aparecem mais acima na árvore
+  - Atributos mais relevantes aparecem mais acima na árvore
 - Adaptável também a problemas de regressão
- - Modelos locais lineares como folhas
+  - Modelos locais lineares como folhas
 
 ### Desvantagens
 
