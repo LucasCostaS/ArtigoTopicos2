@@ -68,14 +68,14 @@ A média (μy) é o valor médio de x<sub>i</sub>, considerando as observações
 
 Esse algoritmo usa os dados em uma distribuição multinomial, que é uma generalização da distribuição binomial. Essa distribuição é parametrizada por vetores θ<sub>yi</sub>=(θ<sub>y1</sub>,…,θ<sub>yn</sub>), θ<sub>yi</sub> é a probabilidade do evento i ocorrer, dado que a classe é y. Podemos dizer que cada vetor θ<sub>y</sub> representa uma observação e n é o número de features. Assim, θ<sub>yi</sub> = P(x<sub>i</sub> | y) e é estimado pela seguinte fórmula:
 <div>
-<img src="https://miro.medium.com/max/296/1*DqNybCxq5P4O0wWRnMhDNw.png" width="400">
+<img src="https://miro.medium.com/max/296/1*DqNybCxq5P4O0wWRnMhDNw.png" width="200">
 </div>
 
 N<sub>yi</sub> é o número de vezes que a feature x<sub>i</sub> aparece no conjunto de treinamento, N<sub>y</sub> é o número de observações com classe y, n é o número de features e alfa é uma constante que contabiliza os recursos que não estão presentes nas amostras de aprendizado e impede que haja probabilidade igual a 0. Se alfa = 1, ele é chamado de Laplace smoothing e, se alfa > 1, é chamado Lidstone smoothing. Se alfa = 0, não há correção.
 
 Para podermos visualizar mais facilmente a necessidade, em alguns casos, da correção, digamos que temos a seguinte tabela de probabilidade:
 <div>
-<img src="https://miro.medium.com/max/1400/1*ELFO8xWfna-2QjJthdk7DA.png" width="800">
+<img src="https://miro.medium.com/max/1400/1*ELFO8xWfna-2QjJthdk7DA.png" width="1000">
 </div>
 
 Se tentarmos classificar o caso em que X = (income = alta, age = >30 e <60, loan = medio), podemos perceber que:
@@ -90,7 +90,7 @@ Esse algoritmo se baseia numa base de dados de acordo com a Distribuição Multi
 Se alguma feature não for composta por valores binários, BernoulliNB() irá transformá-la em uma feature composta por valores binários dependendo do parâmetro binarize.
 Nesse modelo, o P(x<sub>i</sub> | y) é dado por:
 <div>
-<img src=https://miro.medium.com/max/874/1*pDu3m0VKLvpATn1lEdAvUQ.png" width="600">
+<img src="https://miro.medium.com/max/874/1*pDu3m0VKLvpATn1lEdAvUQ.png" width="600">
 </div>
 
 P(i | y) é o parâmetro p da distribuição de Bernoulli. Assim, P(i | y) = p se y = True, e P(i | y) = 1-p se y = False.
@@ -102,12 +102,17 @@ Repare que, ao contrário do Multinomial Naive Bayes, há uma penalidade no caso
 ### Vantagens
 
 -Esse algoritmo funciona rapidamente e pode economizar muito tempo.
+
 -Naive Bayes é adequado para resolver problemas de previsão multiclasse.
+
 -Se sua suposição de independência de recursos for verdadeira, ele pode ter um desempenho melhor do que outros modelos e requer muito menos dados de treinamento.
--Naive Bayes é mais adequado para variáveis ​​de entrada categóricas do que para variáveis ​​numéricas.
+
+-Naive Bayes é mais adequado para variáveis de entrada categóricas do que para variáveis numéricas.
 
 ### Desvantagens
 
 -Naive Bayes assume que todos os preditores (ou recursos) são independentes, raramente acontecendo na vida real. Isso limita a aplicabilidade desse algoritmo em casos de uso do mundo real.
+
 -Este algoritmo enfrenta o "problema de frequência zero", onde atribui probabilidade zero a uma variável categórica cuja categoria no conjunto de dados de teste não estava disponível no conjunto de dados de treinamento. Seria melhor se você usasse uma técnica de suavização para superar esse problema.
+
 -Suas estimativas podem estar erradas em alguns casos, então você não deve levar suas saídas de probabilidade muito a sério.
