@@ -1,0 +1,5 @@
+https://blog.somostera.com/data-science/arvores-de-decisao
+https://medium.com/machine-learning-beyond-deep-learning/%C3%A1rvores-de-decis%C3%A3o-3f52f6420b69
+https://minerandodados.com.br/arvores-de-decisao-conceitos-e-aplicacoes/
+https://didatica.tech/como-funciona-o-algoritmo-arvore-de-decisao/
+https://www.novaims.unl.pt/docentes/vlobo/isegi_SAD/SAD_5_arvores_6.pdf
