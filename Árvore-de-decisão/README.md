@@ -30,21 +30,21 @@ Então, é feita uma avaliação da categoria que mais apareceu nos resultados d
 
 ### Exemplos
 
-**Diagnóstico de doenças
+**Diagnóstico de doenças**
 
 Uma decision tree pode ser aplicada para identificar doenças a partir de informações cedidas ao algoritmo como treinamento — uma classificação. Nesse caso, o sistema apreende os dados, entende suas relações, realiza os cálculos a fim de entender quais são os nós mais importantes e ajusta as condições. 
 
 A grande vantagem, como falamos, é o fato de que não é necessário se preocupar muito com o tratamento dos dados. Para resultados ainda mais interessantes, uma assembleia (random forest) deve ser adotada.
 
-**Previsão de empréstimo 
+**Previsão de empréstimo**
 
 Outro tipo de uso é para previsão de um valor de empréstimo que pode ser concedido a um usuário do banco. Esse é um problema de regressão, pois requer uma informação numérica como saída. O sistema vai entender como a base de dados está organizada de acordo com os atributos e criar um modelo capaz de fazer essa previsão. 
 
-**Análise de sentimentos
+**Análise de sentimentos**
 
 Não é incomum ver também aplicações na área da análise de sentimentos, subcategoria do campo de processamento de linguagem natural. O modelo entende os dados e tenta prever se um texto deve ser categorizado como positivo ou negativo, por exemplo. Para melhores resultados, a random forest é aplicada também.
 
-**Previsão de saída de funcionários
+**Previsão de saída de funcionários**
 
 Outro uso muito específico é para o RH saber quando um funcionário está quase saindo da empresa por insatisfação. Com a análise de dados sobre cada um, o modelo entende a base de dados e consegue realizar uma predição, ou seja, uma classificação. 
 
@@ -70,18 +70,18 @@ onde p(c|R) é a probabilidade de um ponto da região R pertencer a classe c. Es
 
 ### Vantagens
 
-- Interpretação
- - Percebe-se a razão da decisão
-- Facilidade em lidar com diversos tipos de informação
- - Real, nominal, ordinal, etc
- - Não é necessário definir “importância relativa”
-- Insensível a factores de escala
+- Interpretação
+ - Percebe-se a razão da decisão
+- Facilidade em lidar com diversos tipos de informação
+ - Real, nominal, ordinal, etc
+ - Não é necessário definir “importância relativa”
+- Insensível a factores de escala
 - Escolha automática dos atributos mais relevantes em cada caso
- - Atributos mais relevantes aparecem mais acima na árvore
-- Adaptável também a problemas de regressão
- - Modelos locais lineares como folhas
+ - Atributos mais relevantes aparecem mais acima na árvore
+- Adaptável também a problemas de regressão
+ - Modelos locais lineares como folhas
 
 ### Desvantagens
 
 - Fronteiras lineares e perpendiculares aos eixos
-- Sensibilidade a pequenas perturbações no conjunto de treino (geram redes muito diferentes)
+- Sensibilidade a pequenas perturbações no conjunto de treino (geram redes muito diferentes)
