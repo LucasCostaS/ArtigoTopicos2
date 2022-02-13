@@ -3,3 +3,4 @@ https://www.datageeks.com.br/regressao-linear/
 https://ilumeo.com.br/todos-posts/2020/06/22/um-tour-pelos-10-principais-algoritmos-de-machine-learning
 https://doc.arcgis.com/pt-br/insights/latest/analyze/regression-analysis.htm
 https://www.fm2s.com.br/regressao-linear/#:~:text=A%20regress%C3%A3o%20linear%20quantifica%20a,(a%20vari%C3%A1vel%20de%20desfecho).
+https://scikit-learn.org/stable/auto_examples/linear_model/plot_ols.html

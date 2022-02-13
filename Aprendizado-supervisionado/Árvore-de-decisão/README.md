@@ -20,11 +20,11 @@ As árvores servem para classificação ou regressão, ambos tipos de tarefas de
 
 Outra aplicação muito importante das árvores é quando há um problema de diversos rótulos. Ou seja, quando as categorias de classificação são múltiplas, e não apenas duas (como sim ou não). Outros algoritmos apresentam consideráveis problemas e uma maior complexidade, ao passo que com as árvores, cientistas de dados conseguem lidar com isso com facilidade.
 
-Além disso, quando é preciso lidar com dados sem se preocupar muito com o tratamento deles, a decision tree cai bem como uma luva. 
+Além disso, quando é preciso lidar com dados sem se preocupar muito com o tratamento deles, a decision tree cai bem como uma luva.
 
 Nela, valores que ficam muito fora do padrão dos dados ou valores faltantes não chegam a ser prejudiciais. Pouquíssimas etapas de tratamento são necessárias. A pessoa cientista não precisará nem mesmo converter os dados para informações numéricas, já que esse algoritmo também lida bem com informações categóricas (nominais).
 
-Em casos de problemas gerais que envolvem tanto classificação quanto regressão, as árvores também são uma boa pedida. Nesse caso, pode-se implementar uma random forest (floresta aleatória), que consiste basicamente em um conjunto de árvores treinadas que oferecem uma predição sobre os dados, escolhendo uma categoria. 
+Em casos de problemas gerais que envolvem tanto classificação quanto regressão, as árvores também são uma boa pedida. Nesse caso, pode-se implementar uma random forest (floresta aleatória), que consiste basicamente em um conjunto de árvores treinadas que oferecem uma predição sobre os dados, escolhendo uma categoria.
 
 Então, é feita uma avaliação da categoria que mais apareceu nos resultados das árvores para que haja uma decisão final.
 
@@ -32,13 +32,13 @@ Então, é feita uma avaliação da categoria que mais apareceu nos resultados d
 
 **Diagnóstico de doenças**
 
-Uma decision tree pode ser aplicada para identificar doenças a partir de informações cedidas ao algoritmo como treinamento — uma classificação. Nesse caso, o sistema apreende os dados, entende suas relações, realiza os cálculos a fim de entender quais são os nós mais importantes e ajusta as condições. 
+Uma decision tree pode ser aplicada para identificar doenças a partir de informações cedidas ao algoritmo como treinamento — uma classificação. Nesse caso, o sistema apreende os dados, entende suas relações, realiza os cálculos a fim de entender quais são os nós mais importantes e ajusta as condições.
 
 A grande vantagem, como falamos, é o fato de que não é necessário se preocupar muito com o tratamento dos dados. Para resultados ainda mais interessantes, uma assembleia (random forest) deve ser adotada.
 
 **Previsão de empréstimo**
 
-Outro tipo de uso é para previsão de um valor de empréstimo que pode ser concedido a um usuário do banco. Esse é um problema de regressão, pois requer uma informação numérica como saída. O sistema vai entender como a base de dados está organizada de acordo com os atributos e criar um modelo capaz de fazer essa previsão. 
+Outro tipo de uso é para previsão de um valor de empréstimo que pode ser concedido a um usuário do banco. Esse é um problema de regressão, pois requer uma informação numérica como saída. O sistema vai entender como a base de dados está organizada de acordo com os atributos e criar um modelo capaz de fazer essa previsão.
 
 **Análise de sentimentos**
 
@@ -46,7 +46,7 @@ Não é incomum ver também aplicações na área da análise de sentimentos, su
 
 **Previsão de saída de funcionários**
 
-Outro uso muito específico é para o RH saber quando um funcionário está quase saindo da empresa por insatisfação. Com a análise de dados sobre cada um, o modelo entende a base de dados e consegue realizar uma predição, ou seja, uma classificação. 
+Outro uso muito específico é para o RH saber quando um funcionário está quase saindo da empresa por insatisfação. Com a análise de dados sobre cada um, o modelo entende a base de dados e consegue realizar uma predição, ou seja, uma classificação.
 
 ## A matemática por trás
 
@@ -85,3 +85,53 @@ onde p(c|R) é a probabilidade de um ponto da região R pertencer a classe c. Es
 
 - Fronteiras lineares e perpendiculares aos eixos
 - Sensibilidade a pequenas perturbações no conjunto de treino (geram redes muito diferentes)
+
+## Exemplo de uma aplicação em Python
+
+### Exemplo de um problema de classificação
+
+```Python
+from sklearn.datasets import load_iris
+from sklearn import tree
+iris = load_iris()
+X, y = iris.data, iris.target
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X, y)
+```
+
+### Exemplo de um problema de regressão
+
+```Python
+# Import the necessary modules and libraries
+import numpy as np
+from sklearn.tree import DecisionTreeRegressor
+import matplotlib.pyplot as plt
+
+# Create a random dataset
+rng = np.random.RandomState(1)
+X = np.sort(5 * rng.rand(80, 1), axis=0)
+y = np.sin(X).ravel()
+y[::5] += 3 * (0.5 - rng.rand(16))
+
+# Fit regression model
+regr_1 = DecisionTreeRegressor(max_depth=2)
+regr_2 = DecisionTreeRegressor(max_depth=5)
+regr_1.fit(X, y)
+regr_2.fit(X, y)
+
+# Predict
+X_test = np.arange(0.0, 5.0, 0.01)[:, np.newaxis]
+y_1 = regr_1.predict(X_test)
+y_2 = regr_2.predict(X_test)
+
+# Plot the results
+plt.figure()
+plt.scatter(X, y, s=20, edgecolor="black", c="darkorange", label="data")
+plt.plot(X_test, y_1, color="cornflowerblue", label="max_depth=2", linewidth=2)
+plt.plot(X_test, y_2, color="yellowgreen", label="max_depth=5", linewidth=2)
+plt.xlabel("data")
+plt.ylabel("target")
+plt.title("Decision Tree Regression")
+plt.legend()
+plt.show()
+```
