@@ -2,3 +2,4 @@ https://www.datageeks.com.br/naive-bayes/
 https://www.organicadigital.com/blog/algoritmo-de-classificacao-naive-bayes/
 https://medium.com/turing-talks/turing-talks-16-modelo-de-predi%C3%A7%C3%A3o-naive-bayes-6a3e744e7986
 https://www.upgrad.com/blog/naive-bayes-explained/#Advantages_and_Disadvantages_of_Naive_Bayes
+https://scikit-learn.org/stable/modules/naive_bayes.html
