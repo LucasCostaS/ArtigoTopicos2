@@ -6,16 +6,16 @@ Esses dados são alimentados ao algoritmo de Machine Learning e são usados para
 
 Os 7 principais algoritmos atualmente usados para aprendizado não supervisionado são:
 
--[Mínimos quadrados parciais]()
+-[A priori](A-priori)
 
--[Meios difusos]()
+-[Agrupamento hierárquico](Agrupamento-hierarquico)
 
--[Decomposição de valor singular]()
+-[Agrupamento K-means](Agrupamento-K-means)
 
--[Agrupamento K-means]()
+-[Análise do componente principal](Analise-do-componente-principal)
 
--[A priori]()
+-[Decomposição de valor singular](Decomposição-de-valor-singular)
 
--[Agrupamento hierárquico]()
+-[Meios difusos](Meios-Difusos)
 
--[Análise do componente principal]()
+-[Mínimos quadrados parciais](Minimos-Quadrados-Parciais)
