@@ -6,19 +6,17 @@ Sua origem vem da correlação linear, que é a verificação da existência de 
 
 O resultado da regressão linear é sempre um número. É utilizada adequadamente quando o dataset apresenta algum tipo de tendência de crescimento/descrescimento constante.
 
-
 Antes de prosseguir, há alguns conceitos importantes que precisam estar bem claros em mente.
 
 Variável independente ou preditora: é aquela que será passada para o modelo, tendo influência na variável que queremos encontrar. Por exemplo: Se queremos prever as vendas de sorvete, a estação do ano pode interferir nas vendas.
 
 Variável alvo ou dependente: é a variável que queremos prever. No exemplo acima seria as vendas de sorvete.
 
-
 Existem 2 tipos de regressão linear: simples e a múltipla.
 
-Regressão linear simples : refere-se quando temos somente uma variável independente ***x*** para fazermos a predição.
+Regressão linear simples : refere-se quando temos somente uma variável independente **_x_** para fazermos a predição.
 
-Regressão linear múltipla: refere-se a várias variáveis independentes ***x*** usadas para fazer a predição.
+Regressão linear múltipla: refere-se a várias variáveis independentes **_x_** usadas para fazer a predição.
 
 <div>
 <img src="https://images.squarespace-cdn.com/content/v1/5a2a067e8dd04151f6e8250d/1592816786422-TU0MNDRCXD7Y4JAT3LGP/regressao+linear2.jpg" width="600">
@@ -38,7 +36,7 @@ Entender o relacionamento entre as variáveis dependentes e explanatórias.
 
 Prever valores desconhecidos da variável dependente.
 
-***Exemplos***
+**_Exemplos_**
 
 Um analista de uma pequena cadeia de varejo está estudando o desempenho de diferentes lojas. O analista deseja saber o motivo de algumas lojas estarem tendo um volume de vendas inesperadamente baixo. O analista cria um modelo de regressão com variáveis explanatórias como idade mediana e renda na vizinhança, como também, a distância até centros de varejo e o transporte público, para determinar quais variáveis estão influenciando as vendas.
 
@@ -69,10 +67,10 @@ O objetivo da regressão linear é encontrar uma reta que consiga definir bem os
 <img src="https://miro.medium.com/max/1400/0*E-6Yud1vgsM6pV6u" width="600">
 </div>
 
-Onde ***w<sub>0</sub>*** (representa o ponto inicial da reta)e ***w<sub>1</sub>*** (representa a inclinação da reta, ou seja, o quanto que essa variável cresce conforme o tempo passa) são variáveis que o algoritmo calcula para poder definir a reta, e ***x<sub>1</sub>*** seria o atributo de entrada que foi dada ao modelo. E com esses valores ele consegue fazer as previsões.
+Onde **_w<sub>0</sub>_** (representa o ponto inicial da reta)e **_w<sub>1</sub>_** (representa a inclinação da reta, ou seja, o quanto que essa variável cresce conforme o tempo passa) são variáveis que o algoritmo calcula para poder definir a reta, e **_x<sub>1</sub>_** seria o atributo de entrada que foi dada ao modelo. E com esses valores ele consegue fazer as previsões.
 
-Por exemplo, vamos supor que o algoritmo calculou o valor de ***w<sub>0</sub>*** e ***w<sub>1</sub>*** e definiu que seria respectivamente 0 e 10. O valor de ***x<sub>1</sub>*** será 5.1, portanto o cálculo realizado será:
-Yˆ= f(x) = 0 + 10 * 5.1
+Por exemplo, vamos supor que o algoritmo calculou o valor de **_w<sub>0</sub>_** e **_w<sub>1</sub>_** e definiu que seria respectivamente 0 e 10. O valor de **_x<sub>1</sub>_** será 5.1, portanto o cálculo realizado será:
+Yˆ= f(x) = 0 + 10 \* 5.1
 Yˆ= 51
 
 Se você fizer o valor real menos o valor previsto, poderá obter o erro/ resíduo. Portanto a equação ficaria:
@@ -80,7 +78,7 @@ residuo = Y - Yˆ
 
 O resíduo representa a quantidade da variabilidade que Y que o modelo ajustado não consegue explicar. Os resíduos contém informação sobre o motivo do modelo não ter se ajustado bem aos dados.
 
-***Métricas de validação***
+**_Métricas de validação_**
 
 SQR (Soma dos Quadrados dos Resíduos)
 
@@ -89,7 +87,6 @@ Soma dos quadrados dos resíduos, mostra a variação de Y que não é explicada
 <div>
 <img src="https://miro.medium.com/max/1400/1*YC_sAM5AZFmkNeol4BdynA.png" width="600">
 </div>
-
 
 R²
 
@@ -101,16 +98,13 @@ O R² está sempre entre 0 e 1:
 
 1: indica que o modelo explica toda a variabilidade dos dados de resposta ao redor de sua média.
 
-
 MAE (Erro Médio absoluto)
 
 O erro médio absoluto (MAE) é a métrica de erro de regressão mais simples de entender. Ele calcula o valor dos resíduos para cada um dos pontos e depois é tirado a média de todos esses resíduos.
 
-
 <div>
 <img src="https://miro.medium.com/max/1400/0*nruMtzDtZjauyUQ7.jpg" width="600">
 </div>
-
 
 MSE (Média dos erros ao quadrado)
 
@@ -172,3 +166,50 @@ Um exemplo clássico de agrupamento no espaço são os resultados dos testes dos
 
 Exemplos de clustering no tempo são quaisquer estudos em que você mede os mesmos assuntos várias vezes. Por exemplo, em um estudo de dieta e peso, você pode medir cada pessoa várias vezes. Esses dados não são independentes porque o que uma pessoa pesa em uma ocasião está relacionado ao que ela pesa em outras ocasiões. Uma maneira de lidar com isso é com modelos multiníveis.
 
+## Exemplo de uma aplicação em Python
+
+```Python
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn import datasets, linear_model
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Load the diabetes dataset
+diabetes_X, diabetes_y = datasets.load_diabetes(return_X_y=True)
+
+# Use only one feature
+diabetes_X = diabetes_X[:, np.newaxis, 2]
+
+# Split the data into training/testing sets
+diabetes_X_train = diabetes_X[:-20]
+diabetes_X_test = diabetes_X[-20:]
+
+# Split the targets into training/testing sets
+diabetes_y_train = diabetes_y[:-20]
+diabetes_y_test = diabetes_y[-20:]
+
+# Create linear regression object
+regr = linear_model.LinearRegression()
+
+# Train the model using the training sets
+regr.fit(diabetes_X_train, diabetes_y_train)
+
+# Make predictions using the testing set
+diabetes_y_pred = regr.predict(diabetes_X_test)
+
+# The coefficients
+print("Coefficients: \n", regr.coef_)
+# The mean squared error
+print("Mean squared error: %.2f" % mean_squared_error(diabetes_y_test, diabetes_y_pred))
+# The coefficient of determination: 1 is perfect prediction
+print("Coefficient of determination: %.2f" % r2_score(diabetes_y_test, diabetes_y_pred))
+
+# Plot outputs
+plt.scatter(diabetes_X_test, diabetes_y_test, color="black")
+plt.plot(diabetes_X_test, diabetes_y_pred, color="blue", linewidth=3)
+
+plt.xticks(())
+plt.yticks(())
+
+plt.show()
+```
