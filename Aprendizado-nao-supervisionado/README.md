@@ -8,14 +8,10 @@ Os 7 principais algoritmos atualmente usados para aprendizado não supervisionad
 
 -[A priori](A-priori)
 
--[Agrupamento hierárquico](Agrupamento-hierarquico)
-
--[Agrupamento K-means](Agrupamento-K-means)
+-[Clustering](Clustering)
 
 -[Análise do componente principal](Analise-do-componente-principal)
 
 -[Decomposição de valor singular](Decomposição-de-valor-singular)
-
--[Meios difusos](Meios-Difusos)
 
 -[Mínimos quadrados parciais](Minimos-Quadrados-Parciais)
