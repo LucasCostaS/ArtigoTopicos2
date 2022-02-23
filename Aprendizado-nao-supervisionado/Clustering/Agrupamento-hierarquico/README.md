@@ -42,6 +42,8 @@ Os métodos hierárquicos da Análise de Cluster carregam a característica de u
 
 ### Desvantagens
 
+Para grandes volumes de dados outras estruturas de clustering são mais rapidas e produzem agrupamentos mais compactos do que o agrupamento hierarquico ( como por exemplo o agrupamento K-Means para K pequenos )
+
 ## Exemplo de uma aplicação em Python
 
 ### Exemplo de um problema de classificação usando Agrupamento hierárquico
