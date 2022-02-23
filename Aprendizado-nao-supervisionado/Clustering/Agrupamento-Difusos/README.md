@@ -20,24 +20,35 @@ Onde m é o hiperparâmetro que controla quão difuso será o cluster. Quanto ma
 
 - Metodo
 
-O algoritmo FCM tenta particionar uma coleção finita de {\displaystyle n}n elementos {\displaystyle X=\{\mathbf {x} _{1},...,\mathbf {x} _{n}\}}{\displaystyle X=\{\mathbf {x} _{1},...,\mathbf {x} _{n}\}} em uma coleção de c clusters difusos, respeitando algum critério determinado.
+O algoritmo FCM tenta particionar uma coleção finita de N elementos X = {x1 , ... xn} em uma coleção de c clusters difusos, respeitando algum critério determinado.
 
-Dado um conjunto finito de dados, o algoritimo retorna uma lista de {\displaystyle c}c centros de cluster {\displaystyle C=\{\mathbf {c} _{1},...,\mathbf {c} _{c}\}}{\displaystyle C=\{\mathbf {c} _{1},...,\mathbf {c} _{c}\}} e uma matriz de partição
-
-{\displaystyle W=w*{i,j}\in [0,1],\;i=1,...,n,\;j=1,...,c}{\displaystyle W=w*{i,j}\in [0,1],\;i=1,...,n,\;j=1,...,c}, onde cada elemento, {\displaystyle w*{ij}}{\displaystyle w*{ij}} , diz o grau que o elemento {\displaystyle \mathbf {x} _{i}}{\displaystyle \mathbf {x} _{i}} pertence ao cluster {\displaystyle \mathbf {c} _{j}}{\displaystyle \mathbf {c} _{j}}.
+Dado um conjunto finito de dados, o algoritimo retorna uma lista de c centros de cluster C = {C1 , ... , Cc}e uma matriz de partição, onde cada elemento diz o grau que o elemento xi pertence ao cluster Cj.
 
 O FCM visa minimizar uma função objetiva:
 
-{\displaystyle {\underset {C}{\operatorname {arg\,min} }}\sum _{i=1}^{n}\sum _{j=1}^{c}w*{ij}^{m}\left|\mathbf {x} *{i}-\mathbf {c} _{j}\right\|^{2},}{\displaystyle {\underset {C}{\operatorname {arg\,min} }}\sum _{i=1}^{n}\sum _{j=1}^{c}w_{ij}^{m}\left|\mathbf {x} _{i}-\mathbf {c} _{j}\right\|^{2},}
-onde:
+<div>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3116dcd0197dc45eea812c23e79314eb4edac8ab" width="300">
+</div>
 
-{\displaystyle w*{ij}={\frac {1}{\sum *{k=1}^{c}\left({\frac {\left\|\mathbf {x} _{i}-\mathbf {c} _{j}\right\|}{\left\|\mathbf {x} _{i}-\mathbf {c} _{k}\right\|}}\right)^{\frac {2}{m-1}}}}.}{\displaystyle w*{ij}={\frac {1}{\sum *{k=1}^{c}\left({\frac {\left\|\mathbf {x} _{i}-\mathbf {c} _{j}\right\|}{\left\|\mathbf {x} _{i}-\mathbf {c} _{k}\right\|}}\right)^{\frac {2}{m-1}}}}.}
+onde
+
+<div>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0072b0e3d088f0189660ff5cc29335399b28b0b7" width="300">
+</div>
 
 ## Vantagens e Desvantagens
 
 ### Vantagens
 
+- Busca o melhor resultado para conjunto de dados sobrepostos e desempenha comparativamente melhor que o K-Means
+
+- Diferentemente do metodo K-Means, o ponto dos dados é associado a cada centro de cada agrupamento, como resultado o ponto pode pertencer a mais de um centro de cluster
+
 ### Desvantagens
+
+- Definir um valor para C que limita a quantidade de clusters
+
+- O calculo de distancia euclidiana pode ponderar de forma desigual os fatores subjacentes
 
 ## Exemplo de uma aplicação em Python
 
