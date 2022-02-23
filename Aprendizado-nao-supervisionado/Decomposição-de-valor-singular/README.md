@@ -29,20 +29,20 @@ Considere-se a matriz 4×5
 
 A decomposição em valores singulares desta matriz é dada por UΣV\*
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73fdf5fe339a08566cccb833c860558092532f74" width="400">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73fdf5fe339a08566cccb833c860558092532f74" width="250">
 </div>
 
 Note-se que Σ contém apenas zeros fora da diagonal. Ademais, como as matrizes U e V\* são unitárias, multiplicando-se por suas respectivas conjugadas transpostas gera matrizes identidades, como mostrado a seguir. Nesse caso, como U e V\* são reais, cada uma delas é uma matriz ortogonal.
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7f128976e087ec8136d54eeaab90a2eda2a09bc" width="400">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7f128976e087ec8136d54eeaab90a2eda2a09bc" width="700">
 </div>
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43daa2de3e7835aba9c75c1eef02bbe5c2d6f687" width="400">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43daa2de3e7835aba9c75c1eef02bbe5c2d6f687" width="600">
 </div>
 
 Deve-se notar que esta decomposição em valores singulares em particular não é única. Escolhendo-se V tal que
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff594573fad8316d17c3bf71b297e6135d7d3d64" width="400">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff594573fad8316d17c3bf71b297e6135d7d3d64" width="250">
 </div>
 é também uma decomposição válida em valores singulares.
 
