@@ -24,12 +24,12 @@ Suponha-se que M é uma matriz m * n cujas entradas vêm de um corpo de escalare
 Considere-se a matriz 4×5
 
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d5d3df9cf619062481ab2a6b328467990152f1a" width="400">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d5d3df9cf619062481ab2a6b328467990152f1a" width="250">
 </div>
 
 A decomposição em valores singulares desta matriz é dada por UΣV\*
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73fdf5fe339a08566cccb833c860558092532f74" width="250">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73fdf5fe339a08566cccb833c860558092532f74" width="700">
 </div>
 
 Note-se que Σ contém apenas zeros fora da diagonal. Ademais, como as matrizes U e V\* são unitárias, multiplicando-se por suas respectivas conjugadas transpostas gera matrizes identidades, como mostrado a seguir. Nesse caso, como U e V\* são reais, cada uma delas é uma matriz ortogonal.
@@ -42,7 +42,7 @@ Note-se que Σ contém apenas zeros fora da diagonal. Ademais, como as matrizes 
 
 Deve-se notar que esta decomposição em valores singulares em particular não é única. Escolhendo-se V tal que
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff594573fad8316d17c3bf71b297e6135d7d3d64" width="250">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff594573fad8316d17c3bf71b297e6135d7d3d64" width="300">
 </div>
 é também uma decomposição válida em valores singulares.
 
