@@ -24,7 +24,7 @@ Nesse metodo é necessario seguir uma sequencia de passos como por exemplo inden
 
 - Distância manhattan
 <div>
-<img src="https://miro.medium.com/max/816/1*ktEGPP1JttvzdwvXuMbE8w.png" width="300">
+<img src="https://miro.medium.com/max/728/1*FgYuDVeA-yiGgUxEmIXxRA.png" width="300">
 </div>
 
 - Distância máxima
