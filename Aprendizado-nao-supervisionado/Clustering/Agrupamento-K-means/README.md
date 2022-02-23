@@ -2,6 +2,8 @@
 
 ## O que é o metodo de Agrupamento K-means?
 
+É um metodo de clustering que consiste em aproximar elementos ou pontos de dados em um agrupamento, onde K em K-Means representa a quantidade de agrupamentos
+
 ## Uso
 
 ## A matemática por trás
