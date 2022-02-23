@@ -1,1 +1,3 @@
 https://medium.com/swlh/what-is-clustering-and-common-clustering-algorithms-94d2b289df06
+https://muthu.co/mathematics-behind-k-mean-clustering-algorithm/
+https://medium.datadriveninvestor.com/k-means-clustering-c92463d5fa0e
