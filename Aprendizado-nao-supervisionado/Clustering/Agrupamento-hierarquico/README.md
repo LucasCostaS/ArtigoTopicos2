@@ -16,14 +16,17 @@ Nesse metodo é necessario seguir uma sequencia de passos como por exemplo inden
 <div>
 <img src="https://miro.medium.com/max/964/1*mk8ZyVvsyIf7zvGrW9WT6g.png" width="300">
 </div>
+
 - Distância euclidiana quadrada
 <div>
 <img src="https://miro.medium.com/max/816/1*ktEGPP1JttvzdwvXuMbE8w.png" width="300">
 </div>
+
 - Distância manhattan
 <div>
 <img src="https://miro.medium.com/max/816/1*ktEGPP1JttvzdwvXuMbE8w.png" width="300">
 </div>
+
 - Distância máxima
 <div>
 <img src="https://miro.medium.com/max/796/1*0K2Qf6pJO4wBp8h5UdFU-Q.png" width="300">
