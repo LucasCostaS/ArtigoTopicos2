@@ -1,0 +1,6 @@
+http://psychologicalstatistics.blogspot.com/2015/07/pls-think-twice-about-partial-least.html
+https://link.springer.com/article/10.1007/BF02174528#:~:text=The%20major%20limitations%20are%20a,scaling%20of%20the%20descriptor%20variables.
+https://support.minitab.com/en-us/minitab/18/help-and-how-to/modeling-statistics/regression/supporting-topics/partial-least-squares-regression/what-is-partial-least-squares-regression/#:~:text=Partial%20least%20squares%20(PLS)%20regression,of%20on%20the%20original%20data.&text=PLS%20regression%20is%20primarily%20used,%2C%20food%2C%20and%20plastic%20industries.
+https://towardsdatascience.com/partial-least-squares-f4e6714452a
+https://www.xlstat.com/en/solutions/features/partial-least-squares-regression
+https://en.wikipedia.org/wiki/Partial_least_squares_regression
