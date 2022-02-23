@@ -1,6 +1,7 @@
 # Mínimos quadrados parciais
 
 ## O que é o metodo Mínimos quadrados parciais?
+
 Como o nome indica, os Mínimos Quadrados Parciais estão relacionados aos Mínimos Quadrados Ordinários: a abordagem matemática padrão para ajustar uma Regressão Linear.
 
 A regressão por mínimos quadrados parcial (regressão PLS) é um método estatístico que tem alguma relação com a regressão de componentes principais; em vez de encontrar hiperplanos de variância máxima entre a resposta e as variáveis independentes, encontra um modelo de regressão linear projetando as variáveis preditas e as variáveis observáveis para um novo espaço.
@@ -20,7 +21,9 @@ A regressão PLS é usada principalmente nas indústrias química, farmacêutica
 A correlação PLS (PLSC) é outra metodologia relacionada à regressão PLS, que tem sido usada em neuroimagem e mais recentemente na ciência do esporte, para quantificar a força da relação entre os dados conjuntos. Normalmente, o PLSC divide os dados em dois blocos (subgrupos) cada um contendo uma ou mais variáveis e, em seguida, usa a decomposição de valor singular (SVD) para estabelecer a força de qualquer relacionamento (ou seja, a quantidade de informações compartilhadas) que possa existir entre os dados. dois subgrupos de componentes. Ele faz isso usando SVD para determinar a inércia (ou seja, a soma dos valores singulares) da matriz de covariância dos subgrupos em consideração.
 
 ## A matemática por trás
+
 O modelo subjacente geral de PLS multivariado é
+
 <div>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f99c8237329d8854cd91037f9d609e151dde4f51" width="200">
 </div>
@@ -29,16 +32,17 @@ O modelo subjacente geral de PLS multivariado é
 </div>
 onde X é uma matriz n * m de preditores, Y é uma matriz n * p de respostas; T e U são matrizes n * l que são, respectivamente, projeções de X (a pontuação X, componente ou matriz fatorial) e projeções de Y (a pontuação Y); P e Q são, respectivamente,  m * l e p * l matrizes de carregamento ortogonal; e as matrizes E e F são os termos de erro, assumidos como variáveis normais aleatórias independentes e identicamente distribuídas. As decomposições de X e Y são feitas de forma a maximizar a covariância entre T e U.
 
-
 ## Vantagens e Desvantagens
 
 ### Vantagens
+
 Em alguns domínios, pode acontecer que você tenha muitas variáveis independentes em seu modelo, muitas das quais estão correlacionadas com outras variáveis independentes. PLS é uma solução para este caso: permite reduzir a dimensionalidade de variáveis correlacionadas e modelar as informações subjacentes, compartilhadas, dessas variáveis (em variáveis dependentes e independentes).
 
 Uma segunda grande vantagem de PLSs é que é um método que pode modelar múltiplas variáveis de resultado. Muitas estatísticas e modelos de Machine Learning não podem lidar diretamente com várias variáveis de resultado.
 Muitas vezes podem ser encontradas soluções para esses modelos. Por exemplo, construir um modelo por variável. No entanto, especialmente para casos de uso analíticos, pode ser essencial manter tudo em um modelo, pois a interpretação de um modelo multivariado será diferente da interpretação de muitos modelos univariados.
 
 ### Desvantagens
+
 As principais limitações são um risco maior de ignorar as correlações "reais" e a sensibilidade à escala relativa das variáveis do descritor.
 
 Algumas implementações do PLS parecem ter propriedades perigosas (principalmente uma com uma taxa de 100% de falsos positivos) e o PLS geralmente parece inflar o erro Tipo I para pequenos efeitos. A última propriedade pode dar a impressão de atenuar o erro de medição (mas apenas fornece um viés que às vezes pode neutralizar a atenuação decorrente do erro de medição).
@@ -47,6 +51,14 @@ Algumas implementações do PLS parecem ter propriedades perigosas (principalmen
 
 ### Exemplo de um problema de classificação usando Mínimos quadrados parciais
 
-```Python
+Exemplo com base em um problema apresentado na documentação do sckit learn
 
+```Python
+from sklearn.cross_decomposition import PLSRegression
+X = [[0., 0., 1.], [1.,0.,0.], [2.,2.,2.], [2.,5.,4.]]
+Y = [[0.1, -0.2], [0.9, 1.1], [6.2, 5.9], [11.9, 12.3]]
+pls2 = PLSRegression(n_components=2)
+pls2.fit(X, Y)
+PLSRegression()
+Y_pred = pls2.predict(X)
 ```

@@ -46,8 +46,20 @@ Para grandes volumes de dados outras estruturas de clustering são mais rapidas 
 
 ## Exemplo de uma aplicação em Python
 
-### Exemplo de um problema de classificação usando Agrupamento hierárquico
+### Exemplo de um problema de classificação usando Agrupamento hierárquico ( AgglomerativeClustering )
+
+Exemplo com base em um problema apresentado na documentação do sckit learn
 
 ```Python
+
+from sklearn.cluster import AgglomerativeClustering
+import numpy as np
+X = np.array([[1, 2], [1, 4], [1, 0],
+              [4, 2], [4, 4], [4, 0]])
+clustering = AgglomerativeClustering().fit(X)
+clustering
+AgglomerativeClustering()
+clustering.labels_
+array([1, 1, 1, 0, 0, 0])
 
 ```

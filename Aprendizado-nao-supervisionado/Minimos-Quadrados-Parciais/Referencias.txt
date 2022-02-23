@@ -4,3 +4,4 @@ https://support.minitab.com/en-us/minitab/18/help-and-how-to/modeling-statistics
 https://towardsdatascience.com/partial-least-squares-f4e6714452a
 https://www.xlstat.com/en/solutions/features/partial-least-squares-regression
 https://en.wikipedia.org/wiki/Partial_least_squares_regression
+https://scikit-learn.org/stable/modules/generated/sklearn.cross_decomposition.PLSRegression.html
