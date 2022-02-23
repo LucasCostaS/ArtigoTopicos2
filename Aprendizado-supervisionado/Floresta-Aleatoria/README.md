@@ -15,6 +15,7 @@ O algorimo Floresta Aleatória é utilizado em muitas áreas diferentes, tal com
 O algoritmo de treinamento para florestas aleatórias aplica a técnica geral de agregação de bootstrap , ou ensacamento, para alunos de árvore. Dado um conjunto de treinamento X = x<sub>1</sub> , ..., x<sub>n</sub> com respostas Y = y<sub>1</sub> , ..., y<sub>n</sub> , ensacamento repetidamente ( B vezes) seleciona uma amostra aleatória com substituição do conjunto de treinamento e ajusta as árvores a estes amostras:
 
 Para b = 1, ..., B :
+
 1. Amostra, com substituição, n exemplos de treinamento de X , Y ; chame-os de X<sub>b</sub> , Y<sub>b</sub> .
 2. Treine uma árvore de classificação ou regressão f<sub>b</sub> em X<sub>b</sub> , Y<sub>b</sub> .
 
@@ -51,3 +52,21 @@ Um dos grande problemas em aprendizagem de máquina é subreajuste (overfitting)
 A maior limitação do Floresta Aleatória é que uma quantidade grande de árvores pode tornar o algoritmo lento e ineficiente para predições em tempo real. Em geral, estes algoritmos são rápidos para treinar, mas muito lentos para fazer predições depois de treinados. Uma predição com mais acurácia requer mais árvores, o que faz o modelo ficar mais lento. Em muitas aplicações do mundo real o Floresta Alatória é rápido o suficiente, mas pode certamente haver situações onde a performance em tempo de execução é importante e outras abordagens são mais apropriadas.
 
 E é claro, o Floresta Aleatória é uma ferramenta de modelagem preditiva e não descritiva. Isto significa que, se você está procurando uma descrição dos relacionamentos nos seus dados, você deve escolher outras abordagens.
+
+## Exemplo de uma aplicação em Python
+
+Exemplo com base em um problema apresentado na documentação do sckit learn
+
+```Python
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import make_classification
+X, y = make_classification(n_samples=1000, n_features=4,
+                           n_informative=2, n_redundant=0,
+                           random_state=0, shuffle=False)
+clf = RandomForestClassifier(max_depth=2, random_state=0)
+clf.fit(X, y)
+RandomForestClassifier(...)
+print(clf.predict([[0, 0, 0, 0]]))
+
+```

@@ -2,3 +2,4 @@ https://medium.com/machina-sapiens/o-algoritmo-da-floresta-aleat%C3%B3ria-3545f6
 https://stringfixer.com/pt/Random_forests
 https://pt.livingeconomyadvisors.com/2606-what-is-random-forest
 https://datascience.eu/pt/programacao/entendendo-os-classificadores-de-florestas-aleatorias-em-python/
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html

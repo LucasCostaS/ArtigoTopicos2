@@ -32,6 +32,7 @@ O KNN pode ser efetivamente usado na detecção de valores discrepantes. Um exem
 ## A matemática por trás
 
 As etapas de um algoritmo KNN são:
+
 1. Recebe um dado não classificado.
 2. Mede a distância (Euclidiana, Manhattan, Minkowski ou Ponderada) do novo; dado com todos os outros dados que já estão classificados.
 3. Obtém as X(no caso essa variável X é o parâmetro K) menores distâncias.
@@ -59,7 +60,40 @@ Depois que obtiver a distância Euclidiana do ponto 1 para todos os outros ponto
 - Não há necessidade de construir um modelo, ajustar vários parâmetros ou fazer suposições adicionais.
 - O algoritmo é versátil. Ele pode ser usado para classificação, regressão e pesquisa.
 
-
 ### Desvantagens
 
 - O algoritmo fica significativamente mais lento à medida que o número de exemplos e/ou preditores/variáveis ​​independentes aumenta.
+
+## Exemplo de uma aplicação em Python
+
+Exemplo com base em um problema apresentado na documentação do sckit learn
+
+```Python
+import numpy as np
+from scipy.stats import randint
+from sklearn.experimental import enable_halving_search_cv  # noqa
+from sklearn.model_selection import HalvingRandomSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import make_classification
+
+rng = np.random.RandomState(0)
+
+X, y = make_classification(n_samples=700, random_state=rng)
+
+clf = RandomForestClassifier(n_estimators=10, random_state=rng)
+
+param_dist = {
+    "max_depth": [3, None],
+    "max_features": randint(1, 11),
+    "min_samples_split": randint(2, 11),
+    "bootstrap": [True, False],
+    "criterion": ["gini", "entropy"],
+}
+
+rsh = HalvingRandomSearchCV(
+    estimator=clf, param_distributions=param_dist, factor=2, random_state=rng
+)
+rsh.fit(X, y)
+rsh.best_params_
+
+```
