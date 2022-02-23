@@ -37,12 +37,12 @@ Note-se que Σ contém apenas zeros fora da diagonal. Ademais, como as matrizes 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7f128976e087ec8136d54eeaab90a2eda2a09bc" width="700">
 </div>
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43daa2de3e7835aba9c75c1eef02bbe5c2d6f687" width="600">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43daa2de3e7835aba9c75c1eef02bbe5c2d6f687" width="700">
 </div>
 
 Deve-se notar que esta decomposição em valores singulares em particular não é única. Escolhendo-se V tal que
 <div>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff594573fad8316d17c3bf71b297e6135d7d3d64" width="300">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff594573fad8316d17c3bf71b297e6135d7d3d64" width="350">
 </div>
 é também uma decomposição válida em valores singulares.
 
