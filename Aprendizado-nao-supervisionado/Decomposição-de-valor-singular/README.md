@@ -49,8 +49,12 @@ Deve-se notar que esta decomposição em valores singulares em particular não �
 ## Vantagens e Desvantagens
 
 ### Vantagens
+- Simplifica os dados
+- Remove o ruído
+- Pode melhorar os resultados do algoritmo.
 
 ### Desvantagens
+- Os dados transformados podem ser difíceis de entender.
 
 ## Exemplo de uma aplicação em Python
 
