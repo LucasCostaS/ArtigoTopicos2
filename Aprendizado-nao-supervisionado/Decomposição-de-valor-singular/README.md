@@ -18,7 +18,8 @@ Com uso de decomposição de valor singular (SVD) para determinar as principais 
 
 ## A matemática por trás
 
-Suponha-se que M é uma matriz m * n cujas entradas vêm de um corpo de escalares K, que pode ser tanto o corpo de números reais ou o corpo de números complexos. Então existe uma fatorização da forma: {\displaystyle M=U\Sigma V^{*},}M = U\Sigma V^*, onde U é uma matriz unitária m×m sobre K, a matriz Σ é uma matriz diagonal m×n com números reais não-negativos na diagonal, e V*, uma matriz unitária n×n sobre K, denota a transposta conjugada de V. Tal fatorização é chamada de decomposição em valores singulares de M.
+
+Suponha-se que M é uma matriz m * n cujas entradas vêm de um corpo de escalares K, que pode ser tanto o corpo de números reais ou o corpo de números complexos. Então existe uma fatorização da forma: M=UΣV<over>*</over>, onde U é uma matriz unitária m * m sobre K, a matriz Σ é uma matriz diagonal m * n com números reais não-negativos na diagonal, e V*, uma matriz unitária n×n sobre K, denota a transposta conjugada de V. Tal fatorização é chamada de decomposição em valores singulares de M.
 
 ## Vantagens e Desvantagens
 
